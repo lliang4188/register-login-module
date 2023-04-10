@@ -9,6 +9,11 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: auto;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -98,7 +103,7 @@ img, video{
 }
 
 /* Pages styling */
-.loginPage{
+.loginPage, .registerPage{
   width: 100%;
   height: 100vh;
   border-radius: 10px;

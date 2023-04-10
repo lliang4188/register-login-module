@@ -1,0 +1,20 @@
+so guys we have two folders
+
+client and server
+
+client - will hold oue frontend
+server - will hold oue Express Server
+
+Let create the component now !!
+
+Remember that these  will be in different routes/pages
+So we need to create routes ...
+
+I think its clear guys :)
+
+Lets build these page now ...
+
+So guys we have all the componts styling almost done.
+
+Im going to make it responsive first and get to implement the backend/ and dashborad component
+ 

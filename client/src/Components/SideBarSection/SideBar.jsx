@@ -4,7 +4,7 @@ import logo from '../../assets/images/logo.png'
 
 import {IoMdSpeedometer} from 'react-icons/io'
 import { MdDeliveryDining, MdOutlineExplore, MdOutlinePermContactCalendar } from 'react-icons/md'
-import {BsTrophy, BsCreditCard2Front} from 'react-icons/bs'
+import {BsTrophy, BsCreditCard2Front, BsQuestionCircle} from 'react-icons/bs'
 import {AiOutlinePieChart} from 'react-icons/ai'
 import {BiTrendingUp} from 'react-icons/bi'
 const SideBar   = () => {
@@ -16,7 +16,7 @@ const SideBar   = () => {
       </div>
 
       <div className="menuDiv">
-        <h3>QUICK MENU</h3>
+        <h3 className="divTitle">QUICK MENU</h3>
         <ul className="menuList grid">
           <li className="listItem">
             <a href="#" className="menuLink flex">
@@ -49,7 +49,7 @@ const SideBar   = () => {
       </div>
 
       <div className="settingsDiv">
-        <h3>Settings</h3>
+        <h3 className="divTitle">Settings</h3>
         <ul className="menuList grid">
           <li className="listItem">
             <a href="#" className="menuLink flex">
@@ -79,6 +79,17 @@ const SideBar   = () => {
             </a>
           </li>
         </ul>
+      </div>
+
+      <div className="sideBarCard">
+        <BsQuestionCircle className="icon" />
+        <div className="cardContent">
+          <div className="circle1"></div>
+          <div className="circle2"></div>
+          <h3>Help Center</h3>
+          <p>Haveing trouble in Planti, please contact us from for more questions.</p>
+          <button className="btn">Go to help center</button>
+        </div>
       </div>
     </div>
   )

@@ -2,7 +2,7 @@
 /* 谷歌字体线上 */
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap'); */
 /* 谷歌字体本地 */
-@import url(d:\work\bilibili\login-register\client\src\google-fonts.css);
+@import url(/Users/liuliang/register-login-module/client/src/google-fonts.css);
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body { display: flex; justify-content: center; align-items: center; padding: 1rem; margin: auto; font-family: 'Montserrat', sans-serif; }

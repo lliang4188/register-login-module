@@ -1,27 +1,3 @@
-:root{
-  --primaryColor: hsl(94, 55%, 56%);
-  --hoverColor: hsl(93, 75%, 76%);
-  --paleGreen: hsl(96, 75%, 89%);
-  --whiteColor: hsl(0, 0%, 100%);
-  --blackColor: hsl(0, 0%, 18%);
-  --textColor: hsl(240, 1%, 48%);
-  --greyText: hsl(0, 0%, 75%);
-  --bgColor: hsl(220, 10%, 94%);
-  --inputColor: hsl(330, 12%, 97%);
-  --itemCardColor: hsl(120, 5%, 88%);
-  --itemCardHover: hsl(120, 27%, 87%);
-
-
-  /* Font ang Typography */
-  --biggestFontSize: 2.5rem;
-  --h1FontSize: 1.5rem;
-  --h2FontSize: 1.25rem;
-  --h3FontSize: 1rem;
-  --normalFontSize: .938rem;
-  --smallFontSize: .813rem;
-  --smalletFontSize: .75rem;
-}
-
 .listingSection{
   flex-basis: 70%;
 
@@ -84,13 +60,13 @@
     }
   }
 
-  .sellers, .featuredSellers{
+  .sellers{
     width: 100%;
     justify-content: space-between;
     gap: 1rem;
     align-items: flex-start;
 
-    .topSellers{
+    .topSellers,.featuredSellers{
       .heading{
         padding: 1rem 0;
         .btn{
@@ -99,7 +75,7 @@
       }
     }
     .card{
-      padding: 1rem;
+      padding: 1rem 1.5rem;
       border-radius: 1rem;
       background-color: var(--whiteColor);
       gap: 1rem;

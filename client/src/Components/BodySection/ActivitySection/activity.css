@@ -1,0 +1,25 @@
+:root { --primaryColor: #87cd51; --hoverColor: #bdf094; --paleGreen: #dff8ce; --whiteColor: white; --blackColor: #2e2e2e; --textColor: #79797c; --greyText: #bfbfbf; --bgColor: #eeeff1; --inputColor: #f8f6f7; --itemCardColor: #dfe2df; --itemCardHover: #d5e7d5; /* Font ang Typography */ --biggestFontSize: 2.5rem; --h1FontSize: 1.5rem; --h2FontSize: 1.25rem; --h3FontSize: 1rem; --normalFontSize: .938rem; --smallFontSize: .813rem; --smalletFontSize: .75rem; }
+
+.activitySection { flex-basis: 50%; }
+
+.activitySection .heading { width: 100%; justify-content: space-between; }
+
+.activitySection .heading h1 { font-size: var(--h2FontSize); color: var(--blackColor); }
+
+.activitySection .heading .btn { border: 1px solid transparent; }
+
+.activitySection .heading .btn:hover { border-color: var(--primaryColor); }
+
+.activitySection .secContainer { margin-top: 1rem; }
+
+.activitySection .secContainer .signleCustomer { align-items: flex-start; justify-content: space-between; }
+
+.activitySection .secContainer .signleCustomer img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 4px var(--itemCardColor); margin-right: 1rem; }
+
+.activitySection .secContainer .signleCustomer .curstomDetails { flex: 1; }
+
+.activitySection .secContainer .signleCustomer .curstomDetails .name { font-size: var(--h3FontSize); font-weight: 600; color: var(--blackColor); display: block; }
+
+.activitySection .secContainer .signleCustomer .curstomDetails small { font-weight: 500; color: var(--textColor); font-size: var(--smallFontSize); }
+
+.activitySection .secContainer .signleCustomer .duration { font-weight: 500; color: var(--textColor); font-size: var(--smallFontSize); }

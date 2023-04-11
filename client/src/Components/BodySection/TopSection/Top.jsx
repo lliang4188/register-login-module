@@ -2,7 +2,7 @@ import React from "react"
 import { BiSearchAlt} from "react-icons/bi"
 import {TbMessageCircle} from 'react-icons/tb'
 import {MdOutlineNotificationsNone } from 'react-icons/md'
-import { BsArrowRightShort} from 'react-icons/bs'
+import { BsArrowRightShort,BsQuestionCircle} from 'react-icons/bs'
 import './top.css'
 import img from '../../../assets/images/user.jpg'
 import img2 from '../../../assets/images/img-02.png'
@@ -66,7 +66,7 @@ const Top = () => {
               <img src={img2} alt="Image Name" />
             </div>
             {/* We shall use this card Later... */}
-            {/* <div className="sideBarCard">
+            <div className="sideBarCard">
               <BsQuestionCircle className="icon" />
               <div className="cardContent">
                 <div className="circle1"></div>
@@ -75,7 +75,7 @@ const Top = () => {
                 <p>Haveing trouble in Planti, please contact us from for more questions.</p>
                 <button className="btn">Go to help center</button>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

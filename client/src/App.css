@@ -8,7 +8,7 @@
 body { display: flex; justify-content: center; align-items: center; padding: 1rem; margin: auto; font-family: 'Montserrat', sans-serif; }
 
 /* let set up our default styling */
-:root { --primaryColor: #87cd51; --hoverColor: #bdf094; --paleGreen: #dff8ce; --whiteColor: white; --blackColor: #2e2e2e; --textColor: #79797c; --greyText: #bfbfbf; --bgColor: #d6ddd5; --inputColor: #f8f6f7; /* Font ang Typography */ --biggestFontSize: 2.5rem; --h1FontSize: 1.5rem; --h2FontSize: 1.25rem; --h3FontSize: 1rem; --normalFontSize: .938rem; --smallFontSize: .813rem; --smalletFontSize: .75rem; }
+:root { --primaryColor: #87cd51; --hoverColor: #bdf094; --paleGreen: #dff8ce; --whiteColor: white; --blackColor: #2e2e2e; --textColor: #79797c; --greyText: #bfbfbf; --bgColor: #eeeff1; --inputColor: #f8f6f7; --itemCardColor: #dfe2df; --itemCardHover: #d5e7d5; /* Font ang Typography */ --biggestFontSize: 2.5rem; --h1FontSize: 1.5rem; --h2FontSize: 1.25rem; --h3FontSize: 1rem; --normalFontSize: .938rem; --smallFontSize: .813rem; --smalletFontSize: .75rem; }
 
 .flex { display: flex; align-items: center; }
 

@@ -1,5 +1,3 @@
-:root { --primaryColor: #87cd51; --hoverColor: #bdf094; --paleGreen: #dff8ce; --whiteColor: white; --blackColor: #2e2e2e; --textColor: #79797c; --greyText: #bfbfbf; --bgColor: #d6ddd5; --inputColor: #f8f6f7; /* Font ang Typography */ --biggestFontSize: 2.5rem; --h1FontSize: 1.5rem; --h2FontSize: 1.25rem; --h3FontSize: 1rem; --normalFontSize: .938rem; --smallFontSize: .813rem; --smalletFontSize: .75rem; }
-
 .topSection .headerSection { justify-content: space-between; }
 
 .topSection .headerSection .title h1 { font-size: var(--h1FontSize); color: var(--blackColor); font-weight: 700; }

@@ -1,0 +1,43 @@
+:root { --primaryColor: #87cd51; --hoverColor: #bdf094; --paleGreen: #dff8ce; --whiteColor: white; --blackColor: #2e2e2e; --textColor: #79797c; --greyText: #bfbfbf; --bgColor: #eeeff1; --inputColor: #f8f6f7; --itemCardColor: #dfe2df; --itemCardHover: #d5e7d5; /* Font ang Typography */ --biggestFontSize: 2.5rem; --h1FontSize: 1.5rem; --h2FontSize: 1.25rem; --h3FontSize: 1rem; --normalFontSize: .938rem; --smallFontSize: .813rem; --smalletFontSize: .75rem; }
+
+.listingSection { flex-basis: 70%; }
+
+.listingSection .heading { justify-content: space-between; }
+
+.listingSection .heading h1 { font-size: var(--h2FontSize); color: var(--blackColor); font-weight: 700; }
+
+.listingSection .heading .btn { border: 1px solid transparent; font-weight: 500; }
+
+.listingSection .heading .btn:hover { border-color: var(--primaryColor); }
+
+.listingSection .secContainer { margin: 1rem 0; gap: 1rem; flex-wrap: wrap; justify-content: space-between; }
+
+.listingSection .secContainer .signleItem { position: relative; width: 150px; height: 170px; display: flex; flex-direction: column; align-items: center; padding: 1rem; border-radius: 10px; background-color: var(--itemCardColor); }
+
+.listingSection .secContainer .signleItem:hover { background-color: var(--itemCardHover); box-shadow: 0 2px 2px var(--inputColor); }
+
+.listingSection .secContainer .signleItem img { max-width: 100px; }
+
+.listingSection .secContainer .signleItem .icon { position: absolute; top: 10px; right: 10px; color: var(--primaryColor); }
+
+.listingSection .secContainer .signleItem h3 { font-size: var(--h3FontSize); color: var(--blackColor); padding: 1rem 0; }
+
+.listingSection .sellers, .listingSection .featuredSellers { width: 100%; justify-content: space-between; gap: 1rem; align-items: flex-start; }
+
+.listingSection .sellers .topSellers .heading, .listingSection .featuredSellers .topSellers .heading { padding: 1rem 0; }
+
+.listingSection .sellers .topSellers .heading .btn, .listingSection .featuredSellers .topSellers .heading .btn { padding: .5rem 1rem; }
+
+.listingSection .sellers .card, .listingSection .featuredSellers .card { padding: 1rem; border-radius: 1rem; background-color: var(--whiteColor); gap: 1rem; box-shadow: 0 2px 4px var(--inputColor); }
+
+.listingSection .sellers .card .users, .listingSection .featuredSellers .card .users { padding-right: 1rem; border-right: 2px solid var(--greyText); }
+
+.listingSection .sellers .card .users img, .listingSection .featuredSellers .card .users img { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; border: 2px solid var(--inputColor); transition: .5s ease; }
+
+.listingSection .sellers .card .users img:hover, .listingSection .featuredSellers .card .users img:hover { transform: translateY(-10px); }
+
+.listingSection .sellers .card .cardText span, .listingSection .featuredSellers .card .cardText span { color: var(--blackColor); font-weight: 500; }
+
+.listingSection .sellers .card .cardText span small, .listingSection .featuredSellers .card .cardText span small { font-weight: 400; }
+
+.listingSection .sellers .card .cardText span small .date, .listingSection .featuredSellers .card .cardText span small .date { margin-left: 1rem; }

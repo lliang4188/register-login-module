@@ -72,7 +72,7 @@ const Register = () => {
               <div className='input flex'>
                  <BsFillShieldLockFill className='icon' />
                  <input type='password' id='password' placeholder='Enter Passwrod'  onChange={(event)=>{
-                  setPasswrod(event.target.value)
+                  setPassword(event.target.value)
                  }}  />
               </div>
             </div>

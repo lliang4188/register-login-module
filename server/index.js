@@ -4,35 +4,35 @@ const mysql = require('mysql')
 const cors = require('cors')
 
 app.use(express.json())
-app.use(cors)
+app.use(cors())
 
-app.listen(3002, ()=>{
+app.listen(3002, () => {
   console.log('Server is runing on port')
 })
 
 const db = mysql.createConnection({
   user: 'root',
   host: 'localhost',
-  password: '123456',
+  password: '123456ll',
   database: 'plantdb'
 })
 
 app.post('/register', (req, res) => {
+  console.log("🚀 ~ file: index.js:21 ~ app.post ~ req:", req)
   const sendEmail = req.body.Email
   const sendUserName = req.body.UserName
-  const sendPassword = req.body.Password
-
-
+  const sendPassword = req.body.Password  
+  
   const SQL = 'INSERT INTO users (email, username, password) VALUES (?,?,?)'
 
-  const Values= [sendEmail, sendUserName, sendPassword]
+  const Values = [sendEmail, sendUserName, sendPassword]
 
   db.query(SQL, Values, (err, result) => {
-   if (err) {
-    res.send(err)
-   } else {
-    console.log('User inserted successfully!')
-    res.send({message: 'User added!'})
-   }
+    if (err) {
+      res.send(err)
+    } else {
+      console.log('User inserted successfully!')
+      res.send({ message: 'User added!' })
+    }
   })
 })

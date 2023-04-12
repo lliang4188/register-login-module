@@ -93,7 +93,19 @@ img, video { width: 100%; height: auto; }
 
 ::-webkit-scrollbar { display: none; }
 
-@media screen and (max-width: 990px) { .heading { flex-direction: column; align-items: flex-start; gap: 1rem; } }
+@media screen and (max-width: 990px) { .loginPage .container, .registerPage .container { width: 100%; height: 100%; flex-direction: column; padding: 1.5rem; }
+  .loginPage .container .videoDiv, .registerPage .container .videoDiv { width: 100%; }
+  .loginPage .container .videoDiv .textDiv .title, .registerPage .container .videoDiv .textDiv .title { font-size: 25px; }
+  .loginPage .container .videoDiv .textDiv p, .registerPage .container .videoDiv .textDiv p { padding: 1rem; }
+  .loginPage .container .videoDiv .footerDiv .text, .registerPage .container .videoDiv .footerDiv .text { font-size: 12px; }
+  .loginPage .container .videoDiv .footerDiv .btn, .registerPage .container .videoDiv .footerDiv .btn { padding: .8rem 1.5rem; }
+  .loginPage .container .formDiv .headerDiv, .registerPage .container .formDiv .headerDiv { padding: 1.5rem 0; }
+  .loginPage .container .formDiv .headerDiv img, .registerPage .container .formDiv .headerDiv img { width: 40px; }
+  .loginPage .container .formDiv .headerDiv h3, .registerPage .container .formDiv .headerDiv h3 { font-size: 20px; }
+  .loginPage .container .formDiv .form .inputDiv input, .registerPage .container .formDiv .form .inputDiv input { width: 100%; max-width: 200px; }
+  .heading { flex-direction: column; align-items: flex-start; gap: 1rem; } }
+
+@media screen and (max-width: 927px) { .loginPage .container, .registerPage .container { width: 87%; } }
 
 @media screen and (max-width: 918px) { .heading { flex-direction: row; align-items: center; } }
 

@@ -4,9 +4,12 @@ import SideBar from '../SideBarSection/SideBar'
 import Body from '../BodySection/Body'
 const Dashboard = () => {
   return (
-    <div className='dashboard'>
-      <SideBar />
-      <Body />
+    <div className='dashboard flex'>
+      <div className="dashboardCointer flex">
+        <SideBar />
+        <Body />
+      </div>
+      
     </div>
   )
 }

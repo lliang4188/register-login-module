@@ -290,7 +290,7 @@
 
     .main {
       &::before{
-        width: 40% !important;
+        width: calc(50% - 40px) !important;
       }
     }
 
@@ -301,12 +301,44 @@
 }
 
 @media screen and (max-width:918px) {
+
+  .leftCard{
+    margin-top: 1rem;
+    align-self: flex-start;
+    height: 10px !important;
+
+    .main {
+      &::before{
+        width: 50% !important;
+      }
+    }
+
+    .sideBarCard{
+      display: block !important;
+    }
+  }
+
   .headerSection{
     .searchBar{
       display: none;
     }
   }
-  
+}
+@media screen and (max-width:800px) {
+  .cardSection{
+    .leftCard{
+      .main {
+        width: 100%;
+        &::before{
+          width: 100% !important;
+        }
+      };
+
+      .sideBarCard{
+        display: none !important; 
+      }
+    }
+  } 
 }
 
 @media screen and (max-width:725px) {

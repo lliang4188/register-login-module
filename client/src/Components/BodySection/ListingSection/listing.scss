@@ -22,13 +22,13 @@
   .secContainer{
     margin: 1rem 0;
     gap: 1rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 
     .signleItem{
       position: relative;
       width: 150px;
-      height: 170px;
+     
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -112,6 +112,41 @@
           }
         }
       }
+    }
+  }
+}
+
+// 媒体查询
+@media screen and (max-width: 990px) {
+  .secContainer{
+    flex-wrap: wrap !important;
+  }
+  .listingSection{
+    .sellers {
+      .card{
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 918px) {
+  .listingSection{
+    .signleItem{
+      width: 200px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .listingSection{
+    .sellers {
+      flex-direction: column;
+      .card{
+        flex-direction: row;
+      }
+
     }
   }
 }

@@ -23,3 +23,5 @@
 .activitySection .secContainer .signleCustomer .curstomDetails small { font-weight: 500; color: var(--textColor); font-size: var(--smallFontSize); }
 
 .activitySection .secContainer .signleCustomer .duration { font-weight: 500; color: var(--textColor); font-size: var(--smallFontSize); }
+
+@media screen and (max-width: 990px) { .activitySection { width: 100%; } }

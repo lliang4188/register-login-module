@@ -89,10 +89,17 @@
 @media screen and (max-width: 990px) { .cardSection { flex-direction: column; }
   .rightCard, .leftCard { width: 100%; flex-basis: 100%; }
   .leftCard { margin-top: 1rem; align-self: flex-start; height: 10px !important; }
-  .leftCard .main::before { width: 40% !important; }
+  .leftCard .main::before { width: calc(50% - 40px) !important; }
   .leftCard .sideBarCard { display: block !important; } }
 
-@media screen and (max-width: 918px) { .headerSection .searchBar { display: none; } }
+@media screen and (max-width: 918px) { .leftCard { margin-top: 1rem; align-self: flex-start; height: 10px !important; }
+  .leftCard .main::before { width: 50% !important; }
+  .leftCard .sideBarCard { display: block !important; }
+  .headerSection .searchBar { display: none; } }
+
+@media screen and (max-width: 800px) { .cardSection .leftCard .main { width: 100%; }
+  .cardSection .leftCard .main::before { width: 100% !important; }
+  .cardSection .leftCard .sideBarCard { display: none !important; } }
 
 @media screen and (max-width: 725px) { .cardSection .leftCard .main { width: 100%; }
   .cardSection .leftCard .main::before { width: 100% !important; }

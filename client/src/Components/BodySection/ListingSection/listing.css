@@ -8,9 +8,9 @@
 
 .listingSection .heading .btn:hover { border-color: var(--primaryColor); }
 
-.listingSection .secContainer { margin: 1rem 0; gap: 1rem; flex-wrap: wrap; justify-content: space-between; }
+.listingSection .secContainer { margin: 1rem 0; gap: 1rem; flex-wrap: nowrap; justify-content: space-between; }
 
-.listingSection .secContainer .signleItem { position: relative; width: 150px; height: 170px; display: flex; flex-direction: column; align-items: center; padding: 1rem; border-radius: 10px; background-color: var(--itemCardColor); }
+.listingSection .secContainer .signleItem { position: relative; width: 150px; display: flex; flex-direction: column; align-items: center; padding: 1rem; border-radius: 10px; background-color: var(--itemCardColor); }
 
 .listingSection .secContainer .signleItem:hover { background-color: var(--itemCardHover); box-shadow: 0 2px 2px var(--inputColor); }
 
@@ -39,3 +39,11 @@
 .listingSection .sellers .card .cardText span small { font-weight: 400; }
 
 .listingSection .sellers .card .cardText span small .date { margin-left: 1rem; }
+
+@media screen and (max-width: 990px) { .secContainer { flex-wrap: wrap !important; }
+  .listingSection .sellers .card { flex-direction: column; } }
+
+@media screen and (max-width: 918px) { .listingSection .signleItem { width: 200px !important; } }
+
+@media screen and (max-width: 490px) { .listingSection .sellers { flex-direction: column; }
+  .listingSection .sellers .card { flex-direction: row; } }

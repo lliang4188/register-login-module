@@ -208,6 +208,72 @@
   }
 }
 
-::-webkit-scrollbar{
-  display: none;
+// 媒体查询
+@media screen and (max-width:820px) {
+  .sideBar {
+    padding-bottom: 2rem;
+    .sideBarCard{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width:745px){
+  .sideBar{
+    .logoDiv{
+      text-align: center;
+      margin: auto;
+      padding: 1.5rem .5rem 0;
+
+      img{
+        max-width: 50px;
+        margin: 0;
+        border-radius: 10px;
+        padding: .5rem; 
+      }
+
+      h2{
+        display: none;
+      }
+    }
+
+    .menuDiv, .settingsDiv{
+      .divTitle, .smallText{
+        display: none;
+      }
+
+      .menuList{
+        .listItem{
+          .menuLink{
+            justify-content: center;
+
+            .icon{
+              font-size: var(--h1FontSize);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:390px) {
+  .sideBar{
+    .menuDiv, .settingsDiv{
+      .menuList{
+        .listItem{
+          padding: .2rem .5rem;
+
+          .menuLink{
+            justify-content: center;
+
+            .icon{
+              font-size: var(--h2FontSize);
+            }
+          }
+        }
+      }
+    }
+  }
 }

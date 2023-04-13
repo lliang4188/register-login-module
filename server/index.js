@@ -13,12 +13,11 @@ app.listen(3002, () => {
 const db = mysql.createConnection({
   user: 'root',
   host: 'localhost',
-  password: '123456ll',
+  password: '123456',
   database: 'plantdb'
 })
 
 app.post('/register', (req, res) => {
-  console.log("🚀 ~ file: index.js:21 ~ app.post ~ req:", req)
   const sendEmail = req.body.Email
   const sendUserName = req.body.UserName
   const sendPassword = req.body.Password  
@@ -35,4 +34,26 @@ app.post('/register', (req, res) => {
       res.send({ message: 'User added!' })
     }
   })
+})
+
+
+app.post('/login', (req, res) => {
+  const sendUserName = req.body.UserName
+  const sendPassword = req.body.Password
+
+  const SQL = 'SELECT * FROM users WHERE username = ? && password = ? '
+
+  const Values = [sendUserName, sendPassword]
+
+  db.query(SQL, Values, (err, result ) => {
+    if (err) {
+      res.send({ error:err })
+    }
+    if (result.length > 0) {
+      res.send(result)
+    } else {
+      res.send({ message: "Credentials Dont't match!"})
+    }
+  })
+
 })

@@ -1,15 +1,15 @@
 import React,{useState} from 'react'
-import Axios from 'axios'
 // import our assets
 import video from '../../assets/LoginAssets/video.mp4'
 import logo from '../../assets/LoginAssets/logo.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { FaUserShield } from 'react-icons/fa'
 import { BsFillShieldLockFill } from 'react-icons/bs'
 import {  AiOutlineSwapRight} from 'react-icons/ai'
 import { MdMarkEmailRead } from 'react-icons/md'
 import axios from 'axios'
 const Register = () => {
+  const navigateTo = useNavigate()
 
   const [email, setEmail] = useState('')
   const [username, setUsername] = useState('')
@@ -22,7 +22,10 @@ const Register = () => {
       UserName: username,
       Password: password
     }).then(()=>{
-      console.log('User has been created')
+      navigateTo('/')
+      setEmail('')
+      setUsername('')
+      setPassword('')
     })  
   }
   return (
